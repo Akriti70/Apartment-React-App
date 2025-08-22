@@ -1,4 +1,4 @@
-# Apartment-Rentals-Admin
+# Apartment-Rentals-React-App
 
 
 
