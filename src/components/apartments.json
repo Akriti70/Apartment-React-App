@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Cozy Studio in Historic Brick Building",
+    "location": "Amsterdam, Netherlands",
+    "price": 1250,
+    "images": [
+      "https://www.pufikhomes.com/wp-content/uploads/2024/03/sovremennyi-dekor-lofta-v-starom-sklade-v-londone-pufikhomes-1.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2024/03/sovremennyi-dekor-lofta-v-starom-sklade-v-londone-pufikhomes-2.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2024/03/sovremennyi-dekor-lofta-v-starom-sklade-v-londone-pufikhomes-8.jpg"
+    ],
+    "availability": "Available",
+    "isBookmarked": false
+  },
+  {
+    "id": 2,
+    "title": "Modern Flat with Balcony",
+    "location": "Rotterdam, Netherlands",
+    "price": 1450,
+    "images": [
+      "https://www.pufikhomes.com/wp-content/uploads/2023/06/stilnaya-mansardnaya-kvartira-v-shvecii-75-kvm-pufikhomes-17.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2023/06/stilnaya-mansardnaya-kvartira-v-shvecii-75-kvm-pufikhomes-1.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2023/06/stilnaya-mansardnaya-kvartira-v-shvecii-75-kvm-pufikhomes-3.jpg"
+    ],
+    "availability": "Available",
+    "isBookmarked": true
+  },
+  {
+    "id": 3,
+    "title": "Spacious Loft Conversion",
+    "location": "Utrecht, Netherlands",
+    "price": 1400,
+    "images": [
+      "https://www.pufikhomes.com/wp-content/uploads/2025/08/roskoshnye-interiery-lofta-v-stokgolme-pufikhomes-14.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2025/08/roskoshnye-interiery-lofta-v-stokgolme-pufikhomes-2.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2025/08/roskoshnye-interiery-lofta-v-stokgolme-pufikhomes-4.jpg"
+    ],
+    "availability": "Unavailable",
+    "isBookmarked": false
+  },
+  {
+    "id": 4,
+    "title": "Luxury Apartment-Brick Facade",
+    "location": "The Hague, Netherlands",
+    "price": 2100,
+    "images": [
+      "https://www.pufikhomes.com/wp-content/uploads/2024/06/v-garmonii-s-sadom-dom-v-londone-pufikhomes-1.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2024/06/v-garmonii-s-sadom-dom-v-londone-pufikhomes-3.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2024/06/v-garmonii-s-sadom-dom-v-londone-pufikhomes-10.jpg"
+    ],
+    "availability": "Available",
+    "isBookmarked": true
+  },
+  {
+    "id": 5,
+    "title": "Quiet Suburban Duplex",
+    "location": "Eindhoven, Netherlands",
+    "price": 1150,
+    "images": [
+      "https://www.pufikhomes.com/wp-content/uploads/2024/10/izyskannyi-i-uyutnyi-interier-v-georgianskom-dome-v-londone-pufikhomes-17.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2024/10/izyskannyi-i-uyutnyi-interier-v-georgianskom-dome-v-londone-pufikhomes-19.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2024/10/izyskannyi-i-uyutnyi-interier-v-georgianskom-dome-v-londone-pufikhomes-18.jpg"
+    ],
+    "availability": "Available",
+    "isBookmarked": false
+  },
+  {
+    "id": 6,
+    "title": "Penthouse with Rooftop View",
+    "location": "Amsterdam, Netherlands",
+    "price": 2600,
+    "images": [
+      "https://www.pufikhomes.com/wp-content/uploads/2024/09/kvartira-s-elementami-rustik-na-cherdake-pufkhomes-9.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2024/09/kvartira-s-elementami-rustik-na-cherdake-pufkhomes-12.jpg",
+      "https://www.pufikhomes.com/wp-content/uploads/2024/09/kvartira-s-elementami-rustik-na-cherdake-pufkhomes-13.jpg"
+    ],
+    "availability": "Available",
+    "isBookmarked": true
+  }
+]

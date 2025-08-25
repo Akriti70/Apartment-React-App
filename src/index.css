@@ -84,3 +84,30 @@ body {
   padding: 16px;
   margin-bottom: 16px;
 }
+
+/*Apartments-List*/
+.Apartment-list-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Apartment-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Apartment-images-gallery{
+  display: flex;
+  flex-direction: row;
+}
+.Apartment-images-gallery img{
+  width: 20rem;
+  height: 20rem;
+}
+.properties-description{
+  display: flex;
+  flex-direction: column;
+  
+}
