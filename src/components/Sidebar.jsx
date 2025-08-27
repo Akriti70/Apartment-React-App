@@ -1,29 +1,23 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { NavLink } from "react-router-dom";
-
-export default function Sidebar() {
-  const links = [
-    { path: "/", label: "Apartments" },
-    { path: "/bookmarks", label: "Bookmarks" },
-    { path: "/about", label: "About" },
-    { path: "/create", label: "Create Apartment" },
-  ];
-
+const Sidebar = () => {
   return (
-    <aside className="sidebar">
-      <h2>Navigation</h2>
-      <ul>
-        {links.map((link, i) => (
-          <li key={i}>
-            <NavLink
-              to={link.path}
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              {link.label}
-            </NavLink>
-          </li>
-        ))}
+    <aside style={{
+      width: '200px',
+      padding: 'var(--spacing)',
+      backgroundColor: 'var(--secondary-color)',
+      color: '#fff'
+    }}>
+      <h3>Menu</h3>
+      <ul style={{ listStyle: 'none', padding: 0 }}>
+        <li><Link to="/apartments" style={{ color: '#fff' }}>Apartments</Link></li>
+        <li><Link to="/create" style={{ color: '#fff' }}>Create Apartment</Link></li>
+        <li><Link to="/" style={{ color: '#fff' }}>Home</Link></li>
       </ul>
     </aside>
   );
-}
+};
+
+export default Sidebar;
+

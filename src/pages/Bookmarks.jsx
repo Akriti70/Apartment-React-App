@@ -1,9 +1,19 @@
 
-export default function Bookmarks() {
+import React from "react";
+
+export default function ApartmentCard({ id, title, location, price, imageURL, status }) {
   return (
-    <div className="bg-white shadow rounded p-6">
-      <h1 className="text-2xl font-bold mb-4">Bookmarks</h1>
-      <p className="text-gray-700">bookmarked apartments.</p>
+    <div style={{
+      border: "1px solid #ccc",
+      borderRadius: "8px",
+      padding: "12px",
+      textAlign: "center"
+    }}>
+      <img src={imageURL} alt={title} style={{ width: "100%", height: "180px", objectFit: "cover" }} />
+      <h3>{title}</h3>
+      <p>{location}</p>
+      <p style={{ fontWeight: "bold", color: "#007bff" }}>${price}/month</p>
+      <span>Status: {status}</span>
     </div>
   );
 }

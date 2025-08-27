@@ -1,36 +1,42 @@
-import apartmentsDataList from './apartments.json';
+import { useState, useEffect } from "react";
+import apartmentsDataList from "./apartments.json";
 
-function ApartmentsList() {
+export default function ApartmentsList() {
+  const [apartments, setApartments] = useState([]);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("apartments");
+    if (stored) {
+      setApartments(JSON.parse(stored));
+    } else {
+      setApartments(apartmentsDataList);
+    }
+  }, []);
+
+  const toggleBookmark = (id) => {
+    const updated = apartments.map((ap) =>
+      ap.id === id ? { ...ap, isBookmarked: !ap.isBookmarked } : ap
+    );
+    setApartments(updated);
+    localStorage.setItem("apartments", JSON.stringify(updated));
+  };
+
   return (
     <div className="Apartment-list-container">
-      <h2>Properties For Rent</h2>
-      {apartmentsDataList.map((Apartment) => {
-        return (
-          <div key={Apartment.id} className="Apartment-box">
-            
-            <div className="Apartment-images-gallery">
-              {Apartment.images.map((img, imgIndex) => (
-                <img
-                  key={`${Apartment.title}-${imgIndex}`}
-                  src={img}
-                  alt={`${Apartment.title}--${imgIndex}`}
-                />
-                
-              ))}
-            </div>
-            <div className='properties-description'>
-            <h3>{Apartment.title}</h3>
-            <p>{Apartment.location}</p>
-            <p>Price:{Apartment.price}</p>
-
-            <p>Availability:{Apartment.availability}</p>
-            <p>Bookmark{Apartment.isBookmarked}</p>
-            </div>
+      {apartments.map((apartment) => (
+        <div key={apartment.id} className="Apartment-box">
+          <img src={apartment.images[0]} alt={apartment.title} />
+          <div className="properties-description">
+            <h3>{apartment.title}</h3>
+            <p>{apartment.location}</p>
+            <p>Price: €{apartment.price}</p>
+            <p>{apartment.availability}</p>
+            <button onClick={() => toggleBookmark(apartment.id)}>
+              {apartment.isBookmarked ? "Remove Bookmark" : "Add Bookmark"}
+            </button>
           </div>
-        );
-      })}
+        </div>
+      ))}
     </div>
   );
 }
-
-export default ApartmentsList;
